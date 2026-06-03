@@ -1,56 +1,202 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Resolva com Confiança | Seu Assistente IA</title>
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HERO458 - Atendimento Inteligente</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#081526;
+    color:white;
+}
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.hero{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:40px;
+    padding:40px 20px;
+}
+
+.hero img{
+    width:350px;
+    max-width:100%;
+    border-radius:50%;
+    box-shadow:0 0 30px #00aeff;
+}
+
+.info{
+    max-width:600px;
+}
+
+.info h1{
+    font-size:3rem;
+    color:#4cc9ff;
+    margin-bottom:15px;
+}
+
+.info h2{
+    font-size:1.4rem;
+    font-weight:normal;
+    margin-bottom:25px;
+}
+
+.info p{
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.beneficios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    padding:20px;
+}
+
+.card{
+    background:#10243d;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    border:1px solid #1f4d7a;
+}
+
+.card h3{
+    color:#4cc9ff;
+    margin-bottom:10px;
+}
+
+.chat-section{
+    padding:30px 20px 50px;
+}
+
+.chat-title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.chat-title h2{
+    font-size:2rem;
+    color:#4cc9ff;
+}
+
+.chat-box{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,174,255,.4);
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    color:#ccc;
+}
+
+</style>
+
 </head>
+
 <body>
-  <main class="page-shell">
-    <section class="hero-panel">
-      <div class="hero-copy">
-        <span class="hero-tag">Segurança. Calma. Resolução.</span>
-        <h1>Converse com sua IA de confiança e resolva o que mais importa.</h1>
-        <p>Um espaço pensado para quem busca respostas claras, orientação inteligente e tranquilidade durante cada passo do processo.</p>
-        <div class="hero-stats">
-          <div>
-            <strong>24/7</strong>
-            <span>Disponível sempre que precisar</span>
-          </div>
-          <div>
-            <strong>Respostas claras</strong>
-            <span>Explicações objetivas e seguras</span>
-          </div>
-        </div>
-      </div>
-      <div class="hero-card">
-        <div class="card-header">
-          <div>
-            <p class="card-title">Assistente de Resolução</p>
-            <p class="card-subtitle">Fale sobre seu problema e receba apoio imediato.</p>
-          </div>
-          <div class="status-pill">Conexão segura</div>
+
+<div class="container">
+
+    <section class="hero">
+
+        <img src="hero458.png" alt="HERO458">
+
+        <div class="info">
+            <h1>HERO458</h1>
+
+            <h2>
+                Estou aqui para ajudar.<br>
+                Sua necessidade, minha missão.
+            </h2>
+
+            <p>
+                Atendimento inteligente disponível 24 horas por dia para
+                esclarecer dúvidas, orientar procedimentos, fornecer informações
+                e auxiliar você de forma rápida, segura e eficiente.
+            </p>
         </div>
 
-        <div class="chat-window" id="chatWindow">
-          <div class="message assistant">
-            <div class="avatar">IA</div>
-            <div class="balloon">
-              <p>Olá! Estou aqui para ajudar você a encontrar a melhor solução com calma e clareza. Como posso ajudar hoje?</p>
-            </div>
-          </div>
-        </div>
-
-        <form class="chat-form" id="chatForm">
-          <label for="chatInput" class="sr-only">Digite sua mensagem</label>
-          <input id="chatInput" type="text" placeholder="Descreva sua dúvida ou problema..." autocomplete="off" required />
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
     </section>
-  </main>
 
-  <script src="script.js"></script>
+    <section class="beneficios">
+
+        <div class="card">
+            <h3>💬 Atendimento</h3>
+            <p>Respostas rápidas e objetivas.</p>
+        </div>
+
+        <div class="card">
+            <h3>❤️ Emergências</h3>
+            <p>Orientação imediata quando necessário.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛡️ Confiança</h3>
+            <p>Informações seguras e organizadas.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Prontidão</h3>
+            <p>Disponível 24 horas por dia.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤝 Solução</h3>
+            <p>Foco em resolver sua necessidade.</p>
+        </div>
+
+    </section>
+
+    <section class="chat-section">
+
+        <div class="chat-title">
+            <h2>Converse com o HERO458</h2>
+        </div>
+
+        <div class="chat-box">
+
+            <iframe
+                src="https://app.gptmaker.ai/widget/3F4125C8FDC14030C01DE21F89CC3B0D/iframe"
+                width="100%"
+                style="height:800px;"
+                allow="microphone;"
+                frameborder="0">
+            </iframe>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    © 2026 HERO458 - Atendimento Inteligente
+</footer>
+
+<script
+async
+src="https://app.gptmaker.ai/widget/3F4125C8FDC14030C01DE21F89CC3B0D/float.js">
+</script>
+
 </body>
 </html>
